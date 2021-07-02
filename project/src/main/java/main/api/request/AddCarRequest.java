@@ -8,19 +8,23 @@ import lombok.Data;
 @AllArgsConstructor
 public class AddCarRequest
 {
-    @JsonProperty("car-plate")
+    @JsonProperty("car_plate")
     private String carPlate;
     @JsonProperty("VIN")
     private String vin;
+    @JsonProperty("model_car")
     private String model;
+    @JsonProperty("type_car")
     private String type;
+    @JsonProperty("vehicle_category")
     private String vehicleCategory;
     private String brand;
     private String color;
     private String chassis;
+    @JsonProperty("year_car")
     private Integer year;
     @JsonProperty("hors_power")
-    private String horsPower;
+    private Integer horsPower;
     @JsonProperty("ecological_class")
-    private String ecologicalClass;
+    private Integer ecologicalClass;
 }
